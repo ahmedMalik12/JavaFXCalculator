@@ -1,0 +1,73 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*Main class that has many universal properties for convenience*/
+.mainFxmlClass {
+    -fx-background-color: #1f1f1f;
+    -fx-font-family: "Segoe UI Light";
+    -fx-font-size: 25px;
+    -fx-border-radius: 20;
+}
+
+/*Normal label for results*/
+#txtResult{
+    -fx-background-color: #4a4949;
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+
+
+}
+
+/*Hover label for results*/
+#txtResult:hover{
+    -fx-border-color: whitesmoke;
+    -fx-background-color: #4a4949;
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+
+
+}
+
+/*Normal numbers*/
+#bttnNine,#bttnEight,#bttnSeven,#bttnSix,#bttnFive,#bttnFour,#bttnThree,#bttnTwo,#bttnOne,#bttnZero{
+    -fx-background-color: #242323;
+    -fx-text-fill: white;
+
+}
+
+/*Hover for numbers*/
+#bttnNine:hover,#bttnEight:hover,#bttnSeven:hover,#bttnSix:hover,#bttnFive:hover,#bttnFour:hover,#bttnThree:hover,#bttnTwo:hover,#bttnOne:hover,#bttnZero:hover{
+    -fx-background-color: #030303;
+    -fx-border-color: whitesmoke;
+    -fx-text-fill: white;
+
+
+}
+
+/*Operators*/
+#bttnAdd, #bttnMinus, #bttnMultiply, #bttnDivide, #bttnEquals,#bttnReset{
+    -fx-background-color: #403e3e;
+    -fx-text-fill: white;
+
+}
+
+/*Hover for Operators*/
+#bttnAdd:hover, #bttnMinus:hover, #bttnMultiply:hover, #bttnDivide:hover, #bttnEquals:hover,#bttnReset:hover{
+    -fx-background-color: #030303;
+    -fx-border-color: whitesmoke;
+    -fx-text-fill: white;
+
+}
+
+/*Cool effect, linear gradient on textfield while hovering*/
+#bttnReset:active, #txtResult:hover{
+    -fx-background-color: rgb(2,0,36);
+    -fx-background-color: linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(121,9,118,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+/*Button semibold for equals and C button*/
+#bttnReset,#bttnEquals{
+    -fx-font-family: "Segoe UI Semibold";
+}

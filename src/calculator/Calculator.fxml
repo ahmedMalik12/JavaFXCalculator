@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<GridPane id="GridPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.CalculatorController">
+    
+    <stylesheets>
+        <URL value="@calculator.css"/>
+    </stylesheets>
+    <fx:define>
+        <ToggleGroup fx:id="color" />
+    </fx:define>
+    
+    <!--    Column constraints for spacing and formatting-->
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" prefWidth="100" />
+        <ColumnConstraints halignment="CENTER" prefWidth="100" />
+        <ColumnConstraints halignment="CENTER" prefWidth="100" />
+        <ColumnConstraints halignment="CENTER" prefWidth="100" />
+        <ColumnConstraints halignment="CENTER" prefWidth="100" />
+    </columnConstraints>
+    
+    <!--Row constraints for spacing and formatting-->
+    <rowConstraints>  
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+    </rowConstraints>
+    
+    <!--TextField which will act as the top field for the input and output values-->
+    <TextField fx:id="txtResult" GridPane.columnSpan="5">
+    </TextField>
+    
+    <!--Buttons which are numbers/operators-->
+    <Button text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#bttnNine" fx:id="bttnNine"/>
+
+    <Button text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#bttnEight" fx:id="bttnEight"/>
+
+    <Button text="7" GridPane.columnIndex="0" GridPane.rowIndex="1"  onAction="#bttnSeven" fx:id="bttnSeven"/>
+
+    <Button text="6" GridPane.columnIndex="2" GridPane.rowIndex="2"  onAction="#bttnSix" fx:id="bttnSix"/>
+
+    <Button text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#bttnFive" fx:id="bttnFive"/>
+
+    <Button text="4" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#bttnFour" fx:id="bttnFour"/>
+
+    <Button text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" onAction="#bttnThree" fx:id="bttnThree"/>
+
+    <Button text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#bttnTwo" fx:id="bttnTwo"/>
+
+    <Button text="1" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#bttnOne" fx:id="bttnOne"/>
+    <Button text="0" GridPane.columnIndex="0" GridPane.rowIndex="4" onAction="#bttnZero" fx:id="bttnZero"/>
+    
+    
+    <Button  text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" onAction="#bttnDivide" fx:id="bttnDivide"/>
+
+    <Button  text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" onAction="#bttnMultiply" fx:id="bttnMultiply"/>
+
+    <Button  text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" onAction="#bttnMinus" fx:id="bttnMinus"/>
+
+    <Button  text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" onAction="#bttnAdd" fx:id="bttnAdd"/>
+    
+    <Button  text="=" GridPane.columnIndex="4" GridPane.rowIndex="4" onAction="#bttnEquals" fx:id="bttnEquals"/>
+    <Button  text="C" GridPane.columnIndex="4" GridPane.rowIndex="1" onAction="#bttnReset" fx:id="bttnReset"/>
+
+</GridPane>
